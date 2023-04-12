@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Первая задача",
+    "completed": false,
+    "groupId": 1
+  },
+  {
+    "id": 2,
+    "name": "Первая задача",
+    "completed": false,
+    "groupId": 1,
+    "description": "Описание"
+  },
+  {
+    "id": 3,
+    "name": "Первая задача",
+    "completed": false,
+    "groupId": 2
+  },
+  {
+    "id": 4,
+    "name": "Первая задача",
+    "completed": false,
+    "groupId": 3
+  }
+]
