@@ -22,7 +22,7 @@ import { RefreshToken, RefreshTokenSchema } from './schemas/refresh-token.schema
     JwtModule.register({
       global: true,
       secret: `${process.env.SECRET_JWT}`,
-      signOptions: { expiresIn: '15min' },
+      signOptions: { expiresIn: '24h' },
     }),
     MongooseModule.forFeature([{name: RefreshToken.name, schema: RefreshTokenSchema}])
   ],

@@ -23,4 +23,22 @@ export class UsersService {
     const user = await this.userModel.findById(id);
     return user;
   }
+
+  async addTaskToUser(id, task) {
+    const user = await this.findById(id);
+    user.tasks.push(task);
+    await user.save();
+    return user;
+  }
+
+  async addGroupToUser(id, group) {
+    const user = await this.findById(id);
+    user.taskGroups.push(group);
+    await user.save();
+    return user;
+  }
+
+  async parseByReq(req) {
+    return await this.findById(req['user'].sub);
+  }
 }
